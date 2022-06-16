@@ -1,17 +1,111 @@
+/* Common Styles */
 .container {
-  border: 1px solid black;
-  max-width: 700px;
+  max-width: 500px;
   margin: auto;
+  padding: 0.6em;
 }
 
-.fields{
-  border: 1px solid green;
+.container>div {
+  margin-bottom: 1.3em;
+  border: 1px solid rgb(156, 155, 155);
+  border-radius: 4px;
+  padding: 1.1em 0.9em;
+}
+
+.container>div>div:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0em;
+}
+
+/* Header Styles */
+.app-header {
+  text-align: center;
+  background: #3a7bd5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3a6073, #3a7bd5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Fascinate', cursive;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* Input Field Styles */
+.fields,
+.fields div {
   display: flex;
   flex-direction: column;
 }
 
-.field{
-  border: 1px solid blue;
+.fields div {
+  margin-bottom: 1em;
+}
+
+.fields label {
+  margin-bottom: 0.4em;
+  font-weight: bold;
+}
+
+.fields input {
+  padding: 0.5em;
+  font-size: inherit;
+  transition: 0.3s;
+  outline: none;
+}
+
+.fields input:focus {
+  border: 2px solid #3a7bd5;
+}
+
+/* Result Styling */
+.field {
+  /* border: 1px solid blue; */
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.7em;
+}
+
+.divider {
+  height: 1px;
+  background-color: gray;
+  margin: 1em 0;
+}
+
+/* To remove extra spacing created by every main>div>div elements */
+.price-calculation>div:nth-last-child(1) {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+footer{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: #3a7bd5;
+  text-decoration: none;
+  padding: 4px;
+  transition: .3s;
+}
+
+footer a:hover{
+  color: white;
+  background-color: #3a7bd5;
+}
+
+/* For Small devices */
+@media (max-width: 756px){
+  h1{
+    font-size: 1.8em;
+  }
+  h2{
+    font-size: 1.2em;
+  }
 }

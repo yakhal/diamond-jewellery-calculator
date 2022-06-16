@@ -1,9 +1,9 @@
-function Field(props) {
+function Field({fieldName, result, unit}) {
     return (
         <div className='field'>
-            <div className='field-name'>{props.fieldName}</div>
+            <div className='field-name'>{fieldName}</div>
             <div className='field-result'>
-                {props.unit === "₹" && props.unit} {props.result || 0} {props.unit !== "₹" && props.unit}
+                {unit === "₹" && unit} {result || 0} {unit !== "₹" && unit}
             </div>
         </div>
     );
