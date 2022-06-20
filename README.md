@@ -1,4 +1,4 @@
-# Diamond Jewellery Calculator
+# [Diamond Jewellery Calculator](https://djcalc.netlify.app)
 ## Simple calculator to calculate Diamond Jewellery Prices
 
 ### Want to fork?
