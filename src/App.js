@@ -26,7 +26,7 @@ function App() {
   let goldPrice = format((pureGold || impureGold) * fieldInfo.goldRate / 10);
   let diamondPrice = format(fieldInfo.diamondWeight * fieldInfo.diamondRate);
   let testingPrice = fieldInfo.testingRate;
-  let makingPrice = format(fieldInfo.makingRate * pureGold);
+  let makingPrice = format(fieldInfo.makingRate * fieldInfo.ringWeight);
   let totalPrice = goldPrice + diamondPrice + Number(testingPrice) + makingPrice;
 
   return (
